@@ -10,7 +10,12 @@
     margin-top: 10px;
 }
 
-button {
+a {
+    display: block;
+    max-width: 50px;
+}
+
+button, a {
     color: #ffffff;
     border-radius: 5px;
     border: none;
