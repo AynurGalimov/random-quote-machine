@@ -20,7 +20,7 @@
                     <p id="author"></p>
                     <div class="row">
                         <div class="col-lg-6">
-                            <button class="left"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></button>
+                            <a id="twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                         </div>
                         <div class="col-lg-6">
                             <button id="get-quote" class="right"><i class="fa fa-random fa-2x" aria-hidden="true">New Quote</i></button>
@@ -35,6 +35,16 @@
     <script src="js/gradient.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var url = "https://twitter.com/intent/tweet?text=";
+            var text = '"' + document.getElementById('quote').innerHTML + '"';
+            var author = document.getElementById('author').innerHTML
+            document.getElementsByTagName('a')[0].setAttribute('href', url+text + ' ' + author);
+        })
+    </script>
+
 </body>
 
 </html>
