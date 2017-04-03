@@ -15,6 +15,7 @@ var getGradient = function () {
 
     $('body').css('background-color', rgb1);
     $('button').css('background-color', rgb1);
+    $('a').css('background-color', rgb1);
     $('#quote').css('color', rgb1);
     $('#author').css('color', rgb1);
 };
