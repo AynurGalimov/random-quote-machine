@@ -14,6 +14,5 @@ var getGradient = function () {
     var linearGradient = 'linear-gradient(to left,' + rgb1 + ',' + rgb2 + ')';
 
     $('body').css('background-color', rgb1);
-    $('body').css('background', webkitLinearGradient);
-    $('body').css('background', linearGradient);
+    $('#quote').css('color', rgb1);
 };
