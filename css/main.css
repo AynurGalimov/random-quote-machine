@@ -1,0 +1,18 @@
+.horizontal-center {
+    margin: 0 auto;
+}
+
+#quote {
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.quote-block {
+    background: #ffffff;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
